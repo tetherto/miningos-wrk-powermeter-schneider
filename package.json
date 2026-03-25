@@ -1,6 +1,6 @@
 {
-  "name": "miningos-wrk-powermeter-schneider",
-  "version": "0.0.1",
+  "name": "@tetherto/miningos-wrk-powermeter-schneider",
+  "version": "1.0.0",
   "description": "MiningOS Worker PowerMeter Schneider",
   "keywords": [
     "tether"
@@ -11,9 +11,23 @@
     "type": "git",
     "url": "git+https://github.com/tetherto/miningos-wrk-powermeter-schneider.git"
   },
-  "engine": {
-    "node": ">=20.0"
+  "homepage": "https://github.com/tetherto/miningos-wrk-powermeter-schneider#readme",
+  "bugs": {
+    "url": "https://github.com/tetherto/miningos-wrk-powermeter-schneider/issues"
+  },  
+  "engines": {
+    "node": ">=20"
   },
+  "files": [
+    "worker.js",
+    "workers/",
+    "mock/"
+  ],
+  "main": "worker.js",  
+  "type": "commonjs",
+  "bin": {
+    "miningos-wrk-powermeter-schneider": "worker.js"
+  },    
   "scripts": {
     "lint": "standard",
     "lint:fix": "standard --fix",
