@@ -1,8 +1,8 @@
 'use strict'
 
-const libStats = require('miningos-tpl-wrk-powermeter/workers/lib/stats')
+const libStats = require('@tetherto/miningos-tpl-wrk-powermeter/workers/lib/stats')
 const { isTransformerPM } = require('./utils')
-const { groupBy } = require('miningos-lib-stats/utils')
+const { groupBy } = require('@tetherto/miningos-lib-stats/utils')
 
 libStats.specs.powermeter = {
   ...libStats.specs.powermeter_default,

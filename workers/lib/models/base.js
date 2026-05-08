@@ -1,7 +1,7 @@
 'use strict'
 
-const BasePowerMeter = require('miningos-tpl-wrk-powermeter/workers/lib/base')
-const { PROTOCOL } = require('svc-facs-modbus/lib/constants')
+const BasePowerMeter = require('@tetherto/miningos-tpl-wrk-powermeter/workers/lib/base')
+const { PROTOCOL } = require('@tetherto/svc-facs-modbus/lib/constants')
 
 class SchneiderPowerMeter extends BasePowerMeter {
   constructor ({ getClient = null, ...opts }) {

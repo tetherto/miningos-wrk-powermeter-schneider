@@ -1,12 +1,12 @@
 'use strict'
 
-const WrkRack = require('miningos-tpl-wrk-powermeter/workers/rack.powermeter.wrk')
+const WrkRack = require('@tetherto/miningos-tpl-wrk-powermeter/workers/rack.powermeter.wrk')
 
 class WrkPowerMeterRack extends WrkRack {
   init () {
     super.init()
 
-    this.setInitFacs([['fac', 'svc-facs-modbus', '0', '0', {}, 0]])
+    this.setInitFacs([['fac', '@tetherto/svc-facs-modbus', '0', '0', {}, 0]])
   }
 
   getThingType () {

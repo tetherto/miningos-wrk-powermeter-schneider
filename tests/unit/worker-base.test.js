@@ -11,7 +11,7 @@ test('WrkPowerMeterRack getThingType appends schneider suffix', (t) => {
 })
 
 test('WrkPowerMeterRack init registers svc-facs-modbus fac', (t) => {
-  const Parent = require('miningos-tpl-wrk-powermeter/workers/rack.powermeter.wrk')
+  const Parent = require('@tetherto/miningos-tpl-wrk-powermeter/workers/rack.powermeter.wrk')
   const origInit = Parent.prototype.init
   Parent.prototype.init = function () {}
   try {
@@ -24,7 +24,7 @@ test('WrkPowerMeterRack init registers svc-facs-modbus fac', (t) => {
     WrkPowerMeterRack.prototype.init.call(mockThis)
     t.ok(captured)
     t.is(captured.length, 1)
-    t.is(captured[0][1], 'svc-facs-modbus')
+    t.is(captured[0][1], '@tetherto/svc-facs-modbus')
   } finally {
     Parent.prototype.init = origInit
   }

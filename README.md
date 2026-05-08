@@ -266,7 +266,7 @@ Brand and model-specific worker that implements actual device communication:
   ```javascript
   init() {
     super.init()
-    this.setInitFacs([['fac', 'svc-facs-modbus', '0', '0', {}, 0]])
+    this.setInitFacs([['fac', '@tetherto/svc-facs-modbus', '0', '0', {}, 0]])
   }
 ```
 
