@@ -14,20 +14,20 @@
   "homepage": "https://github.com/tetherto/miningos-wrk-powermeter-schneider#readme",
   "bugs": {
     "url": "https://github.com/tetherto/miningos-wrk-powermeter-schneider/issues"
-  },  
+  },
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "files": [
     "worker.js",
     "workers/",
     "mock/"
   ],
-  "main": "worker.js",  
+  "main": "worker.js",
   "type": "commonjs",
   "bin": {
     "miningos-wrk-powermeter-schneider": "worker.js"
-  },    
+  },
   "scripts": {
     "lint": "standard",
     "lint:fix": "standard --fix",
@@ -42,11 +42,11 @@
     "@tetherto/svc-facs-modbus": "git+https://github.com/tetherto/svc-facs-modbus.git"
   },
   "devDependencies": {
+    "@tetherto/miningos-mock-control-service": "git+https://github.com/tetherto/miningos-mock-control-service.git",
     "brittle": "3.16.3",
     "debug": "4.4.1",
-    "standard": "17.1.2",
     "modbus-stream": "0.46.0",
-    "@tetherto/miningos-mock-control-service": "git+https://github.com/tetherto/miningos-mock-control-service.git"
+    "standard": "17.1.2"
   },
   "overrides": {
     "serialport": "npm:noop@1.0.0"
